@@ -6,4 +6,8 @@ from django.http import HttpResponse
 # 引数でリクエストオブジェクトを取得（名前は何でもOK）
 def helloworldfunction(req):
   # まずDjangoコアのHttpResponseクラスを返す
-  return HttpResponse('')
+  # return HttpResponse('')
+
+  # リクエストオブジェクトを受けとってレスポンスオブジェクトを返却
+  resobj = HttpResponse('hello world')
+  return resobj
