@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'core',
     'user',
+    'helloworldapp.apps.HelloworldappConfig',
 ]
 
 MIDDLEWARE = [
