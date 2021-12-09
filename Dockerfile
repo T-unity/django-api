@@ -1,5 +1,5 @@
-#BASE
-FROM python:3.7-alpine
+# BASE / no use alpine
+FROM python:3
 
 # log
 ENV PYTHONUNBUFFERD 1
