@@ -5,7 +5,7 @@ from .views import helloworldfunction, HelloWorldClass
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/user/', include('user.urls')),
+    # path('api/user/', include('user.urls')),
     # プロジェクト内のviews.pyにあるhelloworldfunctionをcall
     path('helloworld/', helloworldfunction),
     # class based viewでcallするhtmlファイル
