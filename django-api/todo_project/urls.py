@@ -10,5 +10,6 @@ urlpatterns = [
     path('helloworld/', helloworldfunction),
     # class based viewでcallするhtmlファイル
     # クラスビューの場合は、views.pyで作成したクラスに.as_viewをつける必要がある
-    path('helloworld2/', HelloWorldClass.as_view())
+    path('helloworld2/', HelloWorldClass.as_view()),
+    path('helloworldapp/', include('helloworldapp.urls'))
 ]
