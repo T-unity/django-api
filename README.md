@@ -25,3 +25,6 @@ makemigrations
 migrate
 <!-- make admin user -->
 createsuperuser
+
+<!-- admin -->
+<!-- hoge / hoge -->
