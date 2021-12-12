@@ -5,5 +5,5 @@ urlpatterns = [
     # django's view
     path('list', HumanList.as_view()),
     # rest_framework's view
-    path('api/', HumanListAPI.as_view()),
+    path('api/human/', HumanListAPI.as_view()),
 ]
