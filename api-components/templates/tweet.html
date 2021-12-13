@@ -1,9 +1,10 @@
 {% for tweet in object_list %}
 <div class="tweet-background">
+  <button onclick="getData({{tweet.id}})">更新</button>
   <ul>
     <li>name:{{ tweet.name }}</li>
-    <li>title:{{ tweet.title }}</li>
-    <li>tweet:{{ tweet.content }}</li>
+    <li id="title-{{tweet.id}}">title:{{ tweet.title }}</li>
+    <li id="content-{{tweet.id}}">tweet:{{ tweet.content }}</li>
   </ul>
 </div>
 {% endfor %}
@@ -15,3 +16,13 @@
     max-width: 500px;
   }
 </style>
+<script>
+  function getData(id) {
+    fetch(`/api/tweet/${id}`)
+    .then( (response) => response.json() )
+    .then((json) =>{
+      document.getElementById(`title-${id}`).innerText = json.title;
+      document.getElementById(`content-${id}`).innerText = json.content;
+    })
+  }
+</script>
