@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.views.generic import ListView
 # from rest_framework.views import APIView
 from rest_framework.generics import ListCreateAPIView
-from .models import Human
+from .models import Human, Tweet
 from .serializers import HumanSerializer
 
 # Create your views here.
@@ -21,3 +21,7 @@ class HumanListAPI(ListCreateAPIView):
   # 扱うデータをシリアライズする
   serializer_class = HumanSerializer
   permission_classes = []
+
+class TweetView(ListView):
+  model = Tweet
+  template_name = 'tweet.html'
