@@ -9,3 +9,14 @@ class Human(models.Model):
     # selfなのでオブジェクト自身が持つ情報の何かをreturnできる
     return self.name
     # return self.greeting
+
+class Tweet(models.Model):
+  name = models.ForeignKey(Human, on_delete=models.CASCADE)
+  title = models.CharField(max_length=30)
+  content = models.CharField(max_length=200)
+
+  def __str__(self):
+    return self.title
+
+  class Meta:
+    verbose_name = verbose_name_plural = '投稿一覧'
