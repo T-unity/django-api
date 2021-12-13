@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import HumanList, HumanListAPI, TweetView
+from .views import HumanList, HumanListAPI, TweetView, TweetAPIView
 
 urlpatterns = [
     # django's view
@@ -7,4 +7,5 @@ urlpatterns = [
     path('tweet-list/', TweetView.as_view()),
     # rest_framework's view
     path('api/human/', HumanListAPI.as_view()),
+    path('api/tweet/<int:pk>/', TweetAPIView.as_view()),
 ]
