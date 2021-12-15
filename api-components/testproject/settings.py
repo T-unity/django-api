@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # API
     'rest_framework',
-    # template
+    # トークンを用いた認証を行う
+    'rest_framework.authtoken',
+    # チェーンでたぐっている感じ。testの中のappsの中のTestConfigを参照している。
     'test.apps.TestConfig',
 ]
 
