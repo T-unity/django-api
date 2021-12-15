@@ -32,3 +32,8 @@ class TweetAPIView(RetrieveAPIView):
   queryset = Tweet.objects.all()
   serializer_class = TweetSerializer
   permission_classes = [IsAuthenticated]
+
+class TweetListAPI(ListCreateAPIView):
+  queryset = Tweet.objects.all()
+  serializer_class = TweetSerializer
+  permission_classes = []
