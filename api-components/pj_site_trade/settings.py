@@ -51,7 +51,7 @@ CORS_ORIGIN_WHITELIST = [
   'http://localhost:3000',
 ]
 
-ROOT_URLCONF = 'testproject.urls'
+ROOT_URLCONF = 'pj_site_trade.urls'
 
 TEMPLATES = [
     {
@@ -69,7 +69,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'testproject.wsgi.application'
+WSGI_APPLICATION = 'pj_site_trade.wsgi.application'
 
 
 # Database
