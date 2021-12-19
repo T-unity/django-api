@@ -20,6 +20,7 @@
 
 ...and other
 
+-----
 
 <details>
 <summary>command</summary>
