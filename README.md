@@ -1,17 +1,45 @@
-# command
+# about this product
 
-## base
-docker-compose build
-docker-compose up
-docker-compose down
+サイト売買のプラットホーム
 
-## django
+## What can this product do?
 
-<!-- make PJ -->
-<!-- django-admin startproject testproject -->
-docker-compose run --rm app django-admin startproject testproject
+・ユーザー登録
+(role: Administrator, Buyer, Seller, transporter:サイト売買に合わせてドメインの移管作業を行う人)
+
+・投稿の作成
+(Buy, Sell)
+
+...and other
+
+## models,tables
+
+・user
+
+・post
+
+...and other
+
+
+<details>
+<summary>command</summary>
+
+## Docker
+
+・docker-compose build
+
+・docker-compose up
+
+・docker-compose down
+
+## django make PJ
+
+docker-compose run --rm app django-admin startproject プロジェクト名
+
+## django others
 
 prefix: docker-compose run --rm app
+
 prefix: python manage.py
 
 example: docker-compose run --rm app python manage.py
@@ -28,3 +56,4 @@ createsuperuser
 
 <!-- admin -->
 <!-- hoge / hoge -->
+</details>
