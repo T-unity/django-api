@@ -22,6 +22,10 @@
 
 -----
 
+## references
+
+https://docs.djangoproject.com/ja/4.0/
+
 <details>
 <summary>command</summary>
 
