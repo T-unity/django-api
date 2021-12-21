@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     # チェーンでたぐっている感じ。testの中のappsの中のTestConfigを参照している。
     'test.apps.TestConfig',
+    'user.apps.UserConfig',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +123,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # ユーザーモデルをカスタマイズする場合はこの定義が必要
-AUTH_USER_MODEL = 'user.User'
+AUTH_USER_MODEL = 'user.CustomUser'
