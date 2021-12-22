@@ -36,7 +36,8 @@ class CustomUserManager(BaseUserManager):
       password=password,
       date_of_birth=date_of_birth,
     )
-    user.is_admin = Trueuser.save(using=self._db)
+    user.is_admin = True
+    user.save(using=self._db)
     return user
 
 class CustomUser(AbstractBaseUser):
