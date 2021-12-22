@@ -59,6 +59,6 @@ migrate
 <!-- make admin user -->
 createsuperuser
 
-<!-- admin -->
-<!-- hoge / hoge -->
+<!-- admin login -->
+<!-- fuga@example.com / pass -->
 </details>
