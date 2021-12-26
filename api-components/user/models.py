@@ -24,7 +24,7 @@ class CustomUserManager(BaseUserManager):
     # データを正規化（validation）してから入力
     user = self.model(
       email=self.normalize_email(email),
-      date_of_birth=date_of_birth,
+      username = self.model.normalize_username(username)
     )
     user.set_password(password)
     user.save(using=self._db)
@@ -34,7 +34,7 @@ class CustomUserManager(BaseUserManager):
     user = self.create_user(
       email,
       password=password,
-      date_of_birth=date_of_birth,
+      username = self.model.normalize_username(username)
     )
     user.is_admin = True
     user.save(using=self._db)
